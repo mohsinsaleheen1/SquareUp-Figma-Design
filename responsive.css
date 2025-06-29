@@ -76,12 +76,38 @@
 }
 @media screen and (max-width: 768px) {
   .header .navitem {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 70px;
+    background: #161616;
+    width: 100%;
+    left: -100%;
+    text-align: center;
+    height: 100vh;
+    padding: 20px 0px;
+    z-index: 1;
+    transition: all 0.5s;
+  }
+  .header .navitem li a {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  .header .navitem li a:hover {
+    background-color: #262626;
+    padding: 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+  }
+  #check:checked ~ .navitem {
+    left: 0%;
   }
   .header .conatctbtn {
     display: none;
   }
-  .togglebtn button {
+  .togglebtn label {
     display: block;
   }
   .header {
@@ -208,6 +234,9 @@
   }
   .copycontent p {
     font-size: 12px;
+  }
+  .footer .header .navitem {
+    display: none;
   }
 }
 @media (min-width: 320px) and (max-width: 740px) {
