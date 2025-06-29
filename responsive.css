@@ -104,11 +104,20 @@
   #check:checked ~ .navitem {
     left: 0%;
   }
+  #check:checked ~ label .icon2 {
+    display: block;
+  }
+  #check:checked ~ label .icon1 {
+    display: none;
+  }
   .header .conatctbtn {
     display: none;
   }
   .togglebtn label {
     display: block;
+  }
+  .togglebtn label .icon2 {
+    display: none;
   }
   .header {
     padding: 20px 40px;
