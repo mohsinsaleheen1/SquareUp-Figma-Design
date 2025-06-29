@@ -253,19 +253,20 @@
   }
   .companiesname {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .companiesname img {
     width: 120px;
   }
   /* Services */
   .servicesimage {
-    padding: 30px 40px;
+    padding: 30px 14px;
   }
   .services .servicesimage h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
   .services .servicesimage p {
-    font-size: 12px;
+    font-size: 10px;
   }
   .servicecard .card {
     padding: 30px;
